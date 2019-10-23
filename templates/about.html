@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{%block content%}
+
+<div style="padding:5%;">
+    <div class="jumbotron text-dark">
+        <div class="card-header text-center " style="font-size:50;">
+            <h1 class="display-1" style="margin:-0.03em;">About me
+            </h1>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title text-center text-gradient">* Made to spread Happiness *</h3>
+            <div class="card-text">
+                <h2>
+                    <footer class="blockquote-footer">Made by <cite title="Source Title">Rushabh Mavkar</cite></footer>
+                </h2>
+            </div>
+        </div>
+        <nav class="nav nav-justified">
+            <a style="margin:3%;" href="{{url_for('createpage')}}" class="btn-danger btn " role="button"
+               aria-disabled="true">Create greeting card</a>
+            <a style="margin:3%;" href="mailto:mavkarrushabh7@gmail.com" class="btn btn-danger " role="button"
+               aria-disabled="true"> Contact Me</a>
+            <a style="margin:3%;" href="{{url_for('linkpage')}}" class="btn btn-danger" role="button"
+               aria-disabled="true"> Help me by sharing link</a>
+        </nav>
+    </div>
+</div>
+
+
+{% endblock content%}

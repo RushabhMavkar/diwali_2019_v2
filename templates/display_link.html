@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{%block content%}
+<div class="container jumbotron text-dark" style="margin:5%;">
+    <h1 class="display-4">Copy the below link and share it to your friends</h1>
+    <div class="card">
+        <pre class="alert-danger text-dark"><code>{{link}}</code></pre>
+    </div>
+    <nav class="nav nav-justified">
+        <a style="margin:1%;" href="#" class="btn btn-light" role="button" aria-disabled="true"><img
+                src="{{url_for('static', filename='icon_fcb.png')}}" width="30" height="30"> Facebook</a>
+        <a style="margin:1%;" href="#" class="btn btn-light" role="button" aria-disabled="true"><img
+                src="{{url_for('static', filename='icon_twt.png')}}" width="30" height="30"> Twitter</a>
+        <a style="margin:1%;" href="#" class="btn btn-light" role="button" aria-disabled="true"><img
+                src="{{url_for('static', filename='icon_wtp.png')}}" width="30" height="30"> Whatsapp</a>
+
+    </nav>
+</div>
+
+
+{%endblock content%}

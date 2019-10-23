@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>{{pgname}}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+<body class="container gradient">
+<nav class="nav nav-justified">
+        <a style="margin:1%;" href="{{url_for('createpage')}}" class="btn btn-danger" role="button" aria-disabled="true">Create Card</a>
+        <a style="margin:1%;" href="{{url_for('aboutpage')}}" class="btn btn-danger" role="button" aria-disabled="true">About us</a>
+
+    </nav>
+
+<br>
+{% block content %}{% endblock %}
+<br>
+
+</body>
+</html>

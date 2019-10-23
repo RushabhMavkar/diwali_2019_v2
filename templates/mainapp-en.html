@@ -1,0 +1,49 @@
+{% extends "template.html" %}
+{%block content%}
+<div class="text-center">
+    <img src="{{url_for('static', filename='diwali_logo.png')}} " width="50%" height=width>
+    <div class="text-center">
+        <h1 class="display-4"><b>* Happy Diwali *</b></h1>
+    </div>
+
+    <h2>{{r_name}}</h2>
+    <h1>
+        <img src="{{url_for('static', filename='diwali_lamp.png')}} " width="10%" height=width>
+        <i>From {{s_name}}</i>
+        <img src="{{url_for('static', filename='diwali_lamp.png')}} " width="10%" height=width>
+    </h1>
+</div>
+
+<div class="text-center text-warning">
+    <br>
+    <h3>
+    <b>
+    <p><i>Light a lamp of love</i></p>
+    <p><i>Blast a chain of sorrow</i></p>
+    <p><i>Shoot a rocket of prosperity</i></p>
+    <p><i>Fire a flowerpot of happiness</i></p>
+    <p><i>Wish you and your family</i></p>
+    <p><i class="display-4">!! Happy DIWALI !!</i></p>
+    </b>
+    </h3>
+    <br>
+</div>
+
+<div class="text-center ">
+    <a href="{{url_for('createpage')}}" class="btn btn-danger text-success" role="button" aria-disabled="true">Create your online
+        greeting card</a>
+    <br>
+    <br>
+</div>
+
+
+<img src="{{url_for('static', filename='diwali_lamp_text.png')}}" width="90%" height=width>
+
+<div class="text-center ">
+    <br>
+
+    <a href="{{url_for('createpage')}}" class="btn btn-danger text-success" role="button" aria-disabled="true">Create your online
+        greeting card</a>
+</div>
+
+{% endblock content%}
